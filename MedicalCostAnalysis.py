@@ -240,3 +240,18 @@ print("\nTest Verisi MSE:", mse)
 
 # SVR icin pkl dosyasi olusturuldu ve ayni dizine kaydeildi
 # joblib.dump(svr_regressor, "med_cost_analysis_svr.pkl")
+
+"""Feature importance grafigi"""
+
+# from sklearn.inspection import permutation_importance
+
+# result = permutation_importance(svr_regressor, X_test, y_pred, n_repeats=30, random_state=42)
+# importance_scores = result.importances_mean
+# sorted_indices = np.argsort(importance_scores)[::-1]
+
+# plt.barh(X_test.columns[sorted_indices], importance_scores[sorted_indices])
+# plt.xlabel('Permütasyon Önem Skorları')
+# plt.ylabel('Değişkenler')
+# plt.title('Değişkenlerin Permütasyon Önem Skorlari')
+# plt.show()
+
